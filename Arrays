@@ -1,0 +1,10 @@
+function wordCount(a,b,c) {
+	 result = "";
+	result +=a+","+b+","+c;
+	return result;
+}
+console.log(wordCount("Hello","HI","BYE"));
+
+var ourArray = ["John",23] // single array
+
+var ourArray1 = [["John",21],["Mary",32]] //nested array
