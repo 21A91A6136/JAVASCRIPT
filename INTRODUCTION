@@ -1,0 +1,47 @@
+* For comment we use :
+-> //: inline comment
+->/* */ : multi line comment
+
+* Data types and variable:
+Data types: undefined, null, boolean, string, symbol, number and object  
+
+There are 3 ways to declare variables:
+1. var -> utilized for the entire code
+2. let ->utilized within the scope
+3. const -> cannot be changed
+
+var a;
+var b=2;
+console.log(a)
+
+* For the string declaration we use:
+var a = "I am \"happy\"inside "; or  var a = 'I am \"happy\"inside '; or var a = `I am \"happy\"inside`;
+console.log(a);
+
+* concatenate two strings using + operator:
+var a = "Hello";
+var b = "Hi";
+console.log(a+b);
+(or)
+
+var a = "Hello";
+a += "Hi";
+console.log(a);
+(or)
+
+var a = "Hello";
+var b = "My name is"+a+"Bye";
+console.log(b);
+
+* find length of string
+alength = a.length;
+console.log(alength);
+
+*extract values from the string:
+letter = a[0]
+console.log(letter)
+
+* strings are immutable i.e cannot be changed once it is created.
+* to find the last letter of the string:
+var ab = a[a.length-1];
+console.log(ab);
