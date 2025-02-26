@@ -1,0 +1,18 @@
+//create a object
+var ourDog = {
+	"name": "Camper",
+	"legs":4,
+	"tails":1,
+	"friends":["everything!"]
+};
+
+//accessing value in an object
+var ourDog = {
+	"name": "Camper",
+	"legs":4,
+	"tails":1,
+	"friends":["everything!"]
+};
+
+var hatVale = ourDog.name;
+console.log(hatVale);
