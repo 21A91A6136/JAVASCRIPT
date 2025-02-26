@@ -8,3 +8,191 @@ console.log(wordCount("Hello","HI","BYE"));
 var ourArray = ["John",23] // single array
 
 var ourArray1 = [["John",21],["Mary",32]] //nested array
+// accessing of array values
+var ourArray = [50,60,70];
+var ourData = ourArray[0];
+console.log(ourData);
+
+//modify the array values
+var ourArray = [50,60,70];
+ourArray[0] = 10;
+console.log(ourArray);
+
+//accessing multi dimensional array with indexes
+var ourArray = [[50,60,70],[1,2,3],[4,5,6],[7,8,9]];
+var myData = ourArray[0][0];
+console.log(myData);
+
+var ourArray = [[50,60,70],[1,2,3],[[4,5,6],7,8,9]];
+var myData = ourArray[2][0];
+console.log(myData);
+
+//push() to add elements in array
+var ourArray = ["Hi",",","I'm"];
+ourArray.push("Hyndhavi",".");
+console.log(ourArray)
+
+var ourArray = ["Hi",",","I'm"];
+ourArray.push(["Hyndhavi","."]);
+console.log(ourArray)
+
+//pop() to remove elements from array
+var ourArray = ["Hi",",","I'm"];
+var a = ourArray.pop();
+console.log(a)
+
+//shift() to remove 1st element
+var ourArray = ["Hi",",","I'm"];
+var a = ourArray.shift();
+console.log(a)
+
+//unshift() to add element in front
+var ourArray = ["Hi",",","I'm"];
+ourArray.shift();
+ourArray.unshift("Happy")
+console.log(ourArray)
+
+//resue of code
+function ourReuse() {
+	// body...
+	console.log("Hello");
+}
+ourReuse();
+ourReuse();
+ourReuse();
+ourReuse();
+
+//passing arugments for the function
+function ourReuse(a,b) {
+	console.log(a-b);
+}
+ourReuse(10,5);
+
+//returning value in function
+function ourReuse(a) {
+	return a-1;
+}
+console.log(ourReuse(10));
+
+//stand in line
+function ourReuse(arr,item) {
+	arr.push(item);
+	return arr.shift();
+}
+var testArr = [1,2,3,4,5];
+console.log("Before: "+JSON.stringify(testArr));
+console.log(nextInLine(testArr,6));
+console.log("After: "+JSON.stringify(testArr));
+
+/returning boolean values
+function welcome(){
+	return false;
+}
+console.log(welcome())
+
+//if condition
+function welcome(isItTrue){
+	if(isItTrue) {
+		return "Yes, it's true";
+	}
+	return "No";
+}
+console.log(welcome(true))
+
+//equality comparison
+function welcome(isItTrue){
+	if(isItTrue==12) {
+		return "Yes";
+	}
+	return "No";
+}
+console.log(welcome(10))
+
+//strict equality operator === which check the data type and value
+function welcome(isItTrue){
+	if(isItTrue==='12') {
+		return "Yes";
+	}
+	return "No";
+}
+console.log(welcome(10))
+
+//AND,OR operators
+function welcome(isItTrue){
+	if(isItTrue=='10' && isItTrue==10) {
+		return "Yes";
+	}
+	return "No";
+}
+console.log(welcome(10))
+
+function welcome(isItTrue){
+	if(isItTrue=='10' || isItTrue==10) {
+		return "Yes";
+	}
+	return "No";
+}
+console.log(welcome(10))
+
+//else statement
+function welcome(isItTrue){
+	if(isItTrue=='10' || isItTrue==10) {
+		return "Yes";
+	}
+	else{
+		return "No";
+	}
+}
+console.log(welcome(10))
+
+//else if statement
+function welcome(isItTrue){
+	if(isItTrue=='10' || isItTrue==10) {
+		return "Yes";
+	}
+	else if(isItTrue==12)
+	{
+		return "None";
+	}
+	else{
+		return "No";
+	}
+}
+console.log(welcome(10))
+
+//golf code
+var names = ["HEllo","Hi","GoodBye","People"];
+function golfScore(par,strokes) {
+	if(strokes == 1){
+		return names[0];
+	}
+	else if(strokes<=par-2){
+		return names[1];
+	}
+	else if(strokes<=par-1){
+		return names[2];
+	}
+	else if(strokes<=par){
+		return names[3];
+	}
+	return "change me";
+}
+console.log(golfScore(5,4));
+
+//switch statements
+function caseInSwitch(val) {
+	var answer="";
+	switch(val){
+	case 1:
+		answer = "alpha";
+		break;
+	case 2:
+		answer = "is";
+		break;
+	}	
+	default:
+		answer="stuff";
+		break
+}
+caseInSwitch(1);
+
