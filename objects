@@ -13,6 +13,90 @@ var ourDog = {
 	"tails":1,
 	"friends":["everything!"]
 };
-
 var hatVale = ourDog.name;
 console.log(hatVale);
+
+var ourDog = {
+	12: "Camper",
+	16:4,
+	11:1,
+	10:["everything!"]
+};
+
+var hatVale = 12;
+var dog = ourDog[hatVale];
+console.log(dog);
+
+//update values in the object
+var ourDog = {
+	"name": "Camper",
+	"legs":4,
+	"tails":1,
+	"friends":["everything!"]
+};
+ourDog.name = "Happy";
+console.log(ourDog);
+
+//add new values to the object
+var ourDog = {
+	"name": "Camper",
+	"legs":4,
+	"tails":1,
+	"friends":["everything!"]
+};
+ourDog.bark = "bow-bow";
+console.log(ourDog);
+
+//delete properties of the object
+var ourDog = {
+	"name": "Camper",
+	"legs":4,
+	"tails":1,
+	"friends":["everything!"]
+};
+
+delete ourDog.bark;
+console.log(ourDog);
+
+//objects for lookup
+function phonetic(val) {
+	// body...
+	var result = "";
+		var ourDog = {
+		"name": "Camper",
+		"legs":4,
+		"tails":1,
+		"friends":["everything!"]
+	};
+	result = ourDog[val];
+	return result;
+}
+console.log(phonetic("legs"));
+
+//testing the objects
+
+var ourDog = {
+	"name": "Camper",
+	"legs":4,
+	"tails":1,
+	"friends":["everything!"]
+};
+function phonetic(val) {
+	
+	if(ourDog.hasOwnProperty(val))
+	{
+		return ourDog[val];
+	}
+	return "NO";
+}
+console.log(phonetic("legs"));
+
+//nested objects
+
+var ourDog = [
+	{"name": "camper",
+	"legs":4,
+	"tails":1,
+	"friends":["everything!","VB","TX","AU"]
+	},
+];
